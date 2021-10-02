@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Students Information</title>
+</head>
+
+<body>
+
+    <table class="maintable">
+        <tr>
+            <td>
+                <form action="" class="main1" autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();" >
+                    <!-- <h3>Registration</h3> -->
+
+                    <div class="mb-3">
+                        <label for="myname" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="myname" id="myname" placeholder="Andrew">
+                    </div>
+                    <div class="mb-3">
+                        <label for="myphone" class="form-label">Phone</label>
+                        <input type="text" class="form-control" name="myphone" id="myphone" placeholder="7001896475">
+                    </div>
+                    <div class="mb-3">
+                        <label for="myroll" class="form-label">Roll No.</label>
+                        <input type="text" class="form-control" name="myroll" id="myroll" placeholder="01019020">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-success" id="btn1" value="Submit" />
+                        <input type="reset" class="btn btn-secondary" id="btn2" value="Reset" />
+                    </div>
+
+                </form>
+            </td>
+            <!-- **************************************************************** -->
+            <td class="main2">
+              
+                <table class="table table-bordered" id="employeeList">
+                    <thead class="tabhead">
+                        
+                        <tr class="table-active">
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Roll No</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            
+                    </tbody>
+                
+            </td>
+        </tr>
+    </table>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
